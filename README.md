@@ -28,9 +28,10 @@
 - 演示地址：[LGNewUi (Demo)](https://loveli.kikiw.cn)
 - 项目文档地址：[查看Pro版本文档介绍](https://blog.kikiw.cn/index.php/archives/65/)
 
-![Pro 大图](https://blog.kikiw.cn/usr/uploads/2024/10/3116824247.webp)
 
 ![001 (1).png](https://blog.kikiw.cn/usr/uploads/2024/10/2968335545.png)
+
+![Pro 大图](https://blog.kikiw.cn/usr/uploads/2024/10/3116824247.webp)
 
 ![MacBook Pro 1(1) (1).png](https://blog.kikiw.cn/usr/uploads/2024/10/1771098788.png)
 
