@@ -33,8 +33,6 @@
 
 ![Pro 大图](https://blog.kikiw.cn/usr/uploads/2024/10/3116824247.webp)
 
-![MacBook Pro 1(1) (1).png](https://blog.kikiw.cn/usr/uploads/2024/10/1771098788.png)
-
 ![MacBook Pro 3 (1).png](https://blog.kikiw.cn/usr/uploads/2024/10/3461829137.png)
 
 ![MacBook Pro 4 (1) (1).png](https://blog.kikiw.cn/usr/uploads/2024/10/68524214.png)
