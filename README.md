@@ -1,7 +1,7 @@
 # LikeGirl v5.2.0
-## 原作者博客：### https://blog.kikiw.cn/index.php/archives/52/
-## 原作者演示地址：### https://lovey.kikiw.cn
-## 原作者项目文档地址：### https://blog.kikiw.cn/index.php/archives/52/
+## 原作者博客： https://blog.kikiw.cn/index.php/archives/52/
+## 原作者演示地址： https://lovey.kikiw.cn
+## 原作者项目文档地址： https://blog.kikiw.cn/index.php/archives/52/
 ------------
 ### 食用方法
 - 打开根目录下的`admin`文件夹
