@@ -101,27 +101,27 @@ include_once 'head.php';
                             loadingname();
                             setTimeout(function () {
                                 removeLoading('test');
-                                toastr["warning"]("获取QQ头像失败 API请求超时 请联系小站管理员！", "Like_Girl");
+                                toastr["warning"]("获取QQ头像失败 API请求超时 请联系小站管理员！", "爱的小窝");
                             }, 2000);
                         }
                     },
                     success: function (result) {
                         if (result.code == 500) {
                             removeLoading('test');
-                            toastr["warning"](result.msg, "Like_Girl");
+                            toastr["warning"](result.msg, "爱的小窝");
                         } else if (result.code == 200) {
                             loadingname();
                             $("#nickname").val(result.name);
                             $(".avatar").attr("src", result.imgurl);
                             setTimeout(function () {
                                 removeLoading('test');
-                                toastr["success"]("获取昵称头像成功", "Like_Girl");
+                                toastr["success"]("获取昵称头像成功", "爱的小窝");
                             }, 1200);
                         }
                     },
                     error: function (xhr, status, error) {
                         removeLoading('test');
-                        toastr["error"]("Request failed: " + error, "Like_Girl");
+                        toastr["error"]("Request failed: " + error, "爱的小窝");
                     }
                 });
             });
@@ -131,43 +131,43 @@ include_once 'head.php';
                 let qq = $("input[name='qq']").val().trim();
                 let name = $("input[name='name']").val().trim();
                 if (qq.length == 0) {
-                    toastr["warning"]("请填写QQ号码！", "Like_Girl");
+                    toastr["warning"]("请填写QQ号码！", "爱的小窝");
                     return false;
                 } else if (name.length == 0) {
-                    toastr["warning"]("请填写恁的昵称！", "Like_Girl");
+                    toastr["warning"]("请填写恁的昵称！", "爱的小窝");
                     return false;
                 }
                 let qqlength = /^[0-9]{6,10}$/;
                 if (!qqlength.test(qq)) {
-                    toastr["warning"]("您的QQ号码格式错误 <br/> 请输入由6-10位的数字 <br/>组成的QQ号码！", "Like_Girl");
+                    toastr["warning"]("您的QQ号码格式错误 <br/> 请输入由6-10位的数字 <br/>组成的QQ号码！", "爱的小窝");
                     return false;
                 }
                 if ((qq == 123456) || (qq == 100000) || (qq == 1234567)) {
-                    toastr["warning"]("我想也许这并不是您的QQ号码...", "Like_Girl");
+                    toastr["warning"]("我想也许这并不是您的QQ号码...", "爱的小窝");
                     return false;
                 }
                 let text = $("textarea[name='text']").val().trim();
                 if (text.length == 0) {
-                    toastr["warning"]("请填写您要留言的内容！", "Like_Girl");
+                    toastr["warning"]("请填写您要留言的内容！", "爱的小窝");
                     return false;
                 } else if (text.length <= 2) {
-                    toastr["warning"]("请填写两个字符以上的内容！", "Like_Girl");
+                    toastr["warning"]("请填写两个字符以上的内容！", "爱的小窝");
                     return false;
                 }
                 let nonub = /^[0-9]+$/;
                 // let filter = new RegExp("[<?php echo $Setinfo['lanjie'] ?>]");
                 let weifan = new RegExp("[<?php echo $Setinfo['lanjiezf'] ?>]");
                 if (nonub.test(text)) {
-                    toastr["warning"]("内容为纯数字 已被拦截！", "Like_Girl");
+                    toastr["warning"]("内容为纯数字 已被拦截！", "爱的小窝");
                     return false;
                 } else if (weifan.test(text)) {
-                    toastr["warning"]("您输入的内容是违禁词 <br/>请注意您的发言不文明的留言 <br/>会被管理员拉进小黑屋喔", "Like_Girl");
+                    toastr["warning"]("您输入的内容是违禁词 <br/>请注意您的发言不文明的留言 <br/>会被管理员拉进小黑屋喔", "爱的小窝");
                     return false;
                 }
 
 
                 if (!(qq && name && text)) {
-                    toastr["warning"]("表单信息不能为空 请先填写完整！", "Like_Girl");
+                    toastr["warning"]("表单信息不能为空 请先填写完整！", "爱的小窝");
                     return false
                 }
                 $('#leavingPost').text('留言提交中...');
@@ -186,29 +186,29 @@ include_once 'head.php';
                             $('#leavingPost').removeAttr("disabled");
                         }, 5000);
                         if (res == 1) {
-                            toastr["success"]("留言提交成功 请刷新本页查看！", "Like_Girl");
+                            toastr["success"]("留言提交成功 请刷新本页查看！", "爱的小窝");
                             $('#leavingPost').text('留言成功');
                         } else if (res == 0) {
-                            toastr["error"]("留言提交失败！", "Like_Girl");
+                            toastr["error"]("留言提交失败！", "爱的小窝");
                             $('#leavingPost').text('留言失败');
                         } else if (res == 3 || res == 30) {
-                            toastr["error"]("留言失败——QQ号码格式错", "Like_Girl");
+                            toastr["error"]("留言失败——QQ号码格式错", "爱的小窝");
                             $('#leavingPost').text('留言失败');
                         } else if (res == 4 || res == 40) {
-                            toastr["error"]("留言失败——IP格式错误", "Like_Girl");
+                            toastr["error"]("留言失败——IP格式错误", "爱的小窝");
                             $('#leavingPost').text('留言失败');
                         } else if (res == 5 || res == 50) {
-                            toastr["error"]("留言失败——参数错误", "Like_Girl");
+                            toastr["error"]("留言失败——参数错误", "爱的小窝");
                             $('#leavingPost').text('留言失败');
                         } else if (res == 8) {
-                            toastr["error"]("留言失败——你今天已经留言过了~", "Like_Girl");
+                            toastr["error"]("留言失败——你今天已经留言过了~", "爱的小窝");
                             $('#leavingPost').text('留言失败');
                         } else {
-                            toastr["error"]("未知错误！", "Like_Girl");
+                            toastr["error"]("未知错误！", "爱的小窝");
                         }
                     },
                     error: function (err) {
-                        toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                        toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
                     }
                 }
                 )
