@@ -1,20 +1,3 @@
-<!--
- * @Version：Like Girl 5.2.0
- * @Author: Ki.
- * @Date: 2024-11-08 10:00:00
- * @LastEditTime: 2024-11-08
- * @Description: 愿得一人心 白首不相离
- * @Document：https://blog.kikiw.cn/index.php/archives/52/
- * @Copyright (c) 2024 by Ki All Rights Reserved. 
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
--->
-
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -22,7 +5,7 @@
     <meta charset="utf-8"/>
     <title>数据库连接失败</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Like Girl 5.2.0" name="description"/>
+    <meta content="Like" name="description"/>
     <meta content="Coderthemes" name="author"/>
 
     <!-- App css -->
@@ -80,7 +63,7 @@
                     <div class="card-body p-4">
 
                         <div class="text-center w-75 m-auto">
-                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">Like_Girl 5.2.0</h4>
+                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">爱的小窝</h4>
                             <div class="info">请检查数据库信息是否配置正确<i style="color: #ff9b9b;"></i></div>
                         </div>
                         <div class="text-center w-75 m-auto" style="margin-bottom: 40px!important;">
@@ -119,10 +102,11 @@
 </div>
 <!-- end page -->
 
-<footer class="footer footer-alt">
-    Copyright © 2022 Ki. && <a href="https://blog.kikiw.cn/index.php/archives/24/" target="_blank">Like_Girl</a> All
+<!--<footer class="footer footer-alt">
+    Copyright © 2022 && <a href="/" target="_blank">爱的小窝</a> All
     Rights Reserved.
 </footer>
+-->
 <script src="../Style/jquery/jquery.min.js"></script>
 <script src="../Style/pagelir/spotlight.bundle.js"></script>
 <script>
