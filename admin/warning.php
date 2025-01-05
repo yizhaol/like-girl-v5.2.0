@@ -125,7 +125,7 @@ if ($file){
 </div>
 <!-- end page -->
 <footer class="footer footer-alt">
-    Copyright © 2022-<?php echo date("Y") ?>&& <a href="/" target="_blank">LOVE</a> All
+    Copyright © 2022-<?php echo date("Y") ?>&& <a href="/" target="_blank">爱的小窝</a> All
     Rights Reserved.
 </footer>
 <!-- App js -->
