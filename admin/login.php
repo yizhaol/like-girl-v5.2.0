@@ -56,14 +56,14 @@
                     <!-- Logo -->
                     <div class="card-header pt-4 pb-4 text-center bg-primary">
                         <a href="##">
-                            <span style="color: #fff;font-size: 1.2rem;">爱的小窝</span>
+                            <span style="color: #fff;font-size: 1.2rem;">Like_Girl __ Login</span>
                         </a>
                     </div>
 
                     <div class="card-body p-4">
 
                         <div class="text-center w-75 m-auto">
-                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">登录后台</h4>
+                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">Like_Girl 5.2.0</h4>
                             <p class="text-muted mb-4">愿得一人心 白首不相离</p>
                         </div>
 
@@ -134,6 +134,9 @@
             alert("密码含有特殊字符 请重新输入")
             return false;
         }
+        
+        
+
     }
 
 </script>
