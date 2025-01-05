@@ -124,12 +124,10 @@ if ($file){
 <!-- end container -->
 </div>
 <!-- end page -->
-<!--
 <footer class="footer footer-alt">
-    Copyright © 2022-<?php echo date("Y") ?>&& <a href="/" target="_blank">Like</a> All
+    Copyright © 2022-<?php echo date("Y") ?>&& <a href="/" target="_blank">LOVE</a> All
     Rights Reserved.
 </footer>
--->
 <!-- App js -->
 <script src="/admin/assets/js/app.min.js"></script>
 </body>
