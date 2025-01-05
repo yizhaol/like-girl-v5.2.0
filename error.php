@@ -1,16 +1,3 @@
-<!--
- * @Version：Like Girl 5.2.0
- * @Author: Ki.
- * @Date: 2024-11-08 10:00:00
- * @LastEditTime: 2024-11-08
- * @Description: 愿得一人心 白首不相离
- * @Document：https://blog.kikiw.cn/index.php/archives/52/
- * @Copyright (c) 2024 by Ki All Rights Reserved. 
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Message：开发不易 版权信息请保留 
--->
 
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -105,7 +92,7 @@ $stmt->fetch();
                     <div class="card-body p-4">
 
                         <div class="text-center w-75 m-auto">
-                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">Like_Girl 5.0.0</h4>
+                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">爱的小窝</h4>
                             <p class="text-muted">善语结善缘 恶语伤人心</p>
                             <p class="text-muted mb-4">
                                 <span class="badge badge-success-lighten">封禁时间：
@@ -146,7 +133,7 @@ $stmt->fetch();
 <!-- end page -->
 
 <footer class="footer footer-alt">
-    Copyright © 2022 Ki. && <a href="https://blog.kikiw.cn/index.php/archives/24/" target="_blank">Like_Girl</a> All
+    Copyright © 2022-<?php echo date("Y") ?>&& <a href="/" target="_blank">爱的小窝</a> All
     Rights Reserved.
 </footer>
 
