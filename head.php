@@ -1,16 +1,3 @@
-<!--
- * @Version：Like Girl 5.2.0
- * @Author: Ki.
- * @Date: 2024-11-08 10:00:00
- * @LastEditTime: 2024-11-08
- * @Description: 愿得一人心 白首不相离
- * @Document：https://blog.kikiw.cn/index.php/archives/52/
- * @Copyright (c) 2024 by Ki All Rights Reserved. 
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Message：开发不易 版权信息请保留 (删除/修改作者版权的Dog请勿使用 感谢配合)
--->
 <?php
 error_reporting(0);
 include ("ipjc.php");
@@ -37,8 +24,8 @@ $Animation = $text['Animation'];
 
 <script>
 
-    console.log("%c Q & V | 3439780232", "color:#fff;background:#000;padding:8px 15px;font-weight: 700;border-radius:15px");
-    console.log("%c Like Girl 5.2.0 | Powered by Ki", "color:#fff;font-weight: 700;background:linear-gradient(270deg,#986fee,#8695e6,#68b7dd,#18d7d3);padding:8px 15px;border-radius:15px");
+    console.log("%c Q & V | 爱的小窝", "color:#fff;background:#000;padding:8px 15px;font-weight: 700;border-radius:15px");
+    console.log("%c 爱的小窝", "color:#fff;font-weight: 700;background:linear-gradient(270deg,#986fee,#8695e6,#68b7dd,#18d7d3);padding:8px 15px;border-radius:15px");
     
 
     function setupVideoPlayer(video) {
@@ -122,8 +109,8 @@ $Animation = $text['Animation'];
 </script>
 <link rel="shortcut icon" href="/favicon.ico" />
 <meta name="keywords"
-    content="<?php echo $text['title'] ?>,Like Girl 5.2.0,LGNeUi,情侣小站,开源情侣网站,PHP情侣网站,情侣记录,情侣网站,情侣项目,情侣小窝,Love,LikeGirl,Ki,PHP情侣小站,情侣小站使用教程,情侣小站使用文档">
-<meta name="discription" content="<?php echo $text['writing'] ?> - Like Girl 5.2.0">
+    content="<?php echo $text['title'] ?>,爱的小窝">
+<meta name="discription" content="<?php echo $text['writing'] ?> - 爱的小窝">
 <meta name="author" content="Ki">
 <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&display=swap" rel="stylesheet">
