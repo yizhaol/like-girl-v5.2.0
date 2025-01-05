@@ -1,16 +1,8 @@
-<!--
- * @Author: Ki.
- * @Date: 2022-12-21 07:35:43
- * @LastEditors: Ki.
- * @LastEditTime: 2022-12-21 07:51:06
- * @Description: 愿得一人心 白首不相离
- * Copyright (c) 2022 by Ki All Rights Reserved. 
--->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8"/>
-    <title>后台管理登录_Like_Girl</title>
+    <title>后台管理登录</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description"/>
     <meta content="Coderthemes" name="author"/>
@@ -64,14 +56,14 @@
                     <!-- Logo -->
                     <div class="card-header pt-4 pb-4 text-center bg-primary">
                         <a href="##">
-                            <span style="color: #fff;font-size: 1.2rem;">Like_Girl __ Login</span>
+                            <span style="color: #fff;font-size: 1.2rem;">爱的小窝</span>
                         </a>
                     </div>
 
                     <div class="card-body p-4">
 
                         <div class="text-center w-75 m-auto">
-                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">Like_Girl 5.2.0</h4>
+                            <h4 class="text-dark-50 text-center mt-0 font-weight-bold">登录后台</h4>
                             <p class="text-muted mb-4">愿得一人心 白首不相离</p>
                         </div>
 
@@ -142,18 +134,9 @@
             alert("密码含有特殊字符 请重新输入")
             return false;
         }
-        
-        
-
     }
 
 </script>
-
-<footer class="footer footer-alt">
-    Copyright © 2022 Ki. && <a href="https://blog.kikiw.cn/index.php/archives/24/" target="_blank">Like_Girl</a> All
-    Rights Reserved.
-</footer>
-
 <!-- App js -->
 <script src="/admin/assets/js/app.min.js"></script>
 </body>
