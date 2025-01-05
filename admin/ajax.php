@@ -1,19 +1,3 @@
-<!-- 
- * @Page：异步Ajax请求处理内容新增修改
- * @Version：Like Girl 5.2.0
- * @Author: Ki.
- * @Date: 2024-11-08 10:00:00
- * @LastEditTime: 2024-11-08
- * @Description: 愿得一人心 白首不相离
- * @Document：https://blog.kikiw.cn/index.php/archives/52/
- * @Copyright (c) 2024 by Ki All Rights Reserved. 
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Warning：禁止以任何方式出售本项目 如有发现一切后果自行负责
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
- * @Message：开发不易 版权信息请保留 （删除/更改版权的无耻之人请勿使用 查到一个挂一个）
- -->
 <?php
 session_start();
 $file = $_SERVER['PHP_SELF'];
@@ -50,21 +34,21 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 135) {
-                    toastr["success"]("更新登录信息成功！", "Like_Girl");
-                    toastr["success"]("更新全局信息成功", "Like_Girl");
-                    toastr["success"]("更新自定义内容成功", "Like_Girl");
+                    toastr["success"]("更新登录信息成功！", "爱的小窝");
+                    toastr["success"]("更新全局信息成功", "爱的小窝");
+                    toastr["success"]("更新自定义内容成功", "爱的小窝");
                 } else if (res == 046) {
-                    toastr["error"]("更新登录信息失败！", "Like_Girl");
-                    toastr["error"]("更新全局信息失败！", "Like_Girl");
-                    toastr["error"]("更新自定义内容失败！", "Like_Girl");
+                    toastr["error"]("更新登录信息失败！", "爱的小窝");
+                    toastr["error"]("更新全局信息失败！", "爱的小窝");
+                    toastr["error"]("更新自定义内容失败！", "爱的小窝");
                 } else if (res == 7) {
-                    toastr["error"]("安全码错误！", "Like_Girl");
+                    toastr["error"]("安全码错误！", "爱的小窝");
                 } else {
-                    toastr["error"]("未知错误！", "Like_Girl");
+                    toastr["error"]("未知错误！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -89,17 +73,17 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 13) {
-                    toastr["success"]("基本信息修改成功！", "Like_Girl");
-                    toastr["success"]("开关设置成功！", "Like_Girl");
+                    toastr["success"]("基本信息修改成功！", "爱的小窝");
+                    toastr["success"]("开关设置成功！", "爱的小窝");
                 } else if (res == 04) {
-                    toastr["error"]("基本信息修改失败！", "Like_Girl");
-                    toastr["error"]("开关设置修改失败！", "Like_Girl");
+                    toastr["error"]("基本信息修改失败！", "爱的小窝");
+                    toastr["error"]("开关设置修改失败！", "爱的小窝");
                 } else {
-                    toastr["error"]("未知错误！", "Like_Girl");
+                    toastr["error"]("未知错误！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -124,15 +108,15 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("情侣信息修改成功！", "Like_Girl");
+                    toastr["success"]("情侣信息修改成功！", "爱的小窝");
                 } else if (res == 0) {
-                    toastr["error"]("情侣信息修改失败！", "Like_Girl");
+                    toastr["error"]("情侣信息修改失败！", "爱的小窝");
                 } else if (res == 3) {
-                    toastr["error"]("QQ号码格式错误！", "Like_Girl");
+                    toastr["error"]("QQ号码格式错误！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -165,13 +149,13 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("卡片信息修改成功！", "Like_Girl");
+                    toastr["success"]("卡片信息修改成功！", "爱的小窝");
                 } else if (res == 0) {
-                    toastr["error"]("卡片信息修改失败！", "Like_Girl");
+                    toastr["error"]("卡片信息修改失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -190,13 +174,13 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("留言设置修改成功！", "Like_Girl");
+                    toastr["success"]("留言设置修改成功！", "爱的小窝");
                 } else if (res == 0) {
-                    toastr["error"]("留言设置修改失败！", "Like_Girl");
+                    toastr["error"]("留言设置修改失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -218,16 +202,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("文章修改成功！", "Like_Girl");
+                    toastr["success"]("文章修改成功！", "爱的小窝");
                     $('#littleupda').text('修改中...');
                     $("#littleupda").attr("disabled", "disabled");
                     setInterval("window.location.href='littleSet.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("文章修改失败！", "Like_Girl");
+                    toastr["error"]("文章修改失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -248,16 +232,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("新增文章成功！", "Like_Girl");
+                    toastr["success"]("新增文章成功！", "爱的小窝");
                     $('#littleAddPost').text('发布中...');
                     $("#littleAddPost").attr("disabled", "disabled");
                     setInterval("window.location.href='littleSet.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("新增文章失败！", "Like_Girl");
+                    toastr["error"]("新增文章失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -280,16 +264,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("相册修改成功！", "Like_Girl");
+                    toastr["success"]("相册修改成功！", "爱的小窝");
                     $('#ImgUpdaPost').text('修改中...');
                     $("#ImgUpdaPost").attr("disabled", "disabled");
                     setInterval("window.location.href='loveImgSet.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("相册修改失败！", "Like_Girl");
+                    toastr["error"]("相册修改失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -310,16 +294,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("新增相册成功！", "Like_Girl");
+                    toastr["success"]("新增相册成功！", "爱的小窝");
                     $('#ImgUpdaPost').text('新增中...');
                     $("#ImgUpdaPost").attr("disabled", "disabled");
                     setInterval("window.location.href='loveImgSet.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("新增相册失败！", "Like_Girl");
+                    toastr["error"]("新增相册失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -340,16 +324,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("新增事件成功！", "Like_Girl");
+                    toastr["success"]("新增事件成功！", "爱的小窝");
                     $('#listaddPost').text('新增中...');
                     $("#listaddPost").attr("disabled", "disabled");
                     setInterval("window.location.href='lovelist.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("新增事件失败！", "Like_Girl");
+                    toastr["error"]("新增事件失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -367,16 +351,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("IP封禁成功！", "Like_Girl");
+                    toastr["success"]("IP封禁成功！", "爱的小窝");
                     $('#listupda').text('提交中...');
                     $("#listupda").attr("disabled", "disabled");
                     setInterval("window.location.href='ipList.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("IP封禁失败！", "Like_Girl");
+                    toastr["error"]("IP封禁失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -398,16 +382,16 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("修改事件成功！", "Like_Girl");
+                    toastr["success"]("修改事件成功！", "爱的小窝");
                     $('#listupda').text('修改中...');
                     $("#listupda").attr("disabled", "disabled");
                     setInterval("window.location.href='lovelist.php'", 1000);
                 } else if (res == 0) {
-                    toastr["error"]("修改事件失败！", "Like_Girl");
+                    toastr["error"]("修改事件失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
@@ -470,13 +454,13 @@ if (!isset($_SESSION['loginadmin']) && $_SESSION['loginadmin'] == '') {
             dataType: "text",
             success: function (res) {
                 if (res == 1) {
-                    toastr["success"]("修改对话配置成功！", "Like_Girl");
+                    toastr["success"]("修改对话配置成功！", "爱的小窝");
                 } else if (res == 0) {
-                    toastr["error"]("修改对话配置失败！", "Like_Girl");
+                    toastr["error"]("修改对话配置失败！", "爱的小窝");
                 }
             },
             error: function (err) {
-                toastr["error"]("网络错误 请稍后重试！", "Like_Girl");
+                toastr["error"]("网络错误 请稍后重试！", "爱的小窝");
             }
         }
         )
