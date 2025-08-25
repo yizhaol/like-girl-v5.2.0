@@ -1,5 +1,8 @@
-# 使用官方PHP镜像并附带Apache
-FROM php:8.2-apache
+# 使用PHP 7.4版本并附带Apache
+FROM php:7.4-apache
+
+# 设置Apache的ServerName来消除警告
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 # 设置工作目录
 WORKDIR /var/www/html
@@ -8,7 +11,6 @@ WORKDIR /var/www/html
 COPY . .
 
 # 安装必要的PHP扩展（根据你的项目需要）
-# 如果你的项目需要连接数据库，但数据库在外部，你可能仍然需要这些扩展
 RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 # 启用Apache的rewrite模块（如果你的项目需要URL重写）
