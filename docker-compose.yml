@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  web:
+    build: .
+    container_name: likegirl
+    ports:
+      - "8080:80"   # 访问 http://localhost:8080
+    environment:
+      DB_HOST: host.docker.internal
+      DB_USER: LikeGirlv520
+      DB_PASS: LikeGirlDBPw
+      DB_NAME: LikeGirlv520
+      LIKE_CODE: LovePHP
+      VERSION: "20241108"
+    volumes:
+      - .:/var/www/html   # 挂载代码，开发时推荐，生产环境可去掉
+    restart: unless-stopped
