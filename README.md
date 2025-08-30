@@ -3,15 +3,27 @@
 ## 原作者演示地址： https://lovey.kikiw.cn
 
 ------------
-### 食用方法
-- 打开根目录下的`admin`文件夹
-- 接着找到`Config_DB.php`文件 打开后按注释提示更改为你的数据库相关信息
-- 请认真填写安全码 尽量设置的`复杂难以猜测` 修改密码等敏感信息需输入安全码
-- `LikeGirl v5.2.0 AllData` 为带默认数据的SQL文件
-- `LikeGirl v5.2.0 Purity` 为纯净版数据的SQL文件
-- 最后按个人需求将数据库文件导入到数据库中即可
-- 默认账号密码：`admin`/`loveww`
+# 使用方法
+## 方法一：一键部署
+按照docker后，部署好数据库，将下面代码配置项替换成自己的参数，直接运行代码即可
+>docker run -d \
+>  --name likegirl_web \
+>  -p 8080:80 \
+>  -e DB_HOST=host.docker.internal \
+>  -e DB_USER=LikeGirlv520 \
+>  -e DB_PASS=LikeGirlDBPw \
+>  -e DB_NAME=LikeGirlv520 \
+>  -e LIKE_CODE=LovePHP \
+>  -e VERSION=20241108 \
+>  yourname/likegirl:latest
+## 方法二：
+拉取github项目后修改docker-compose.yml为自己的配置参数运行docker-compose.yml
+> 最基本的前台启动（用于调试，Ctrl+C 可停止）
 
+>docker-compose up
 
+>更常用的方式：后台启动（守护进程模式)
+
+>docker-compose up -d
 
 
